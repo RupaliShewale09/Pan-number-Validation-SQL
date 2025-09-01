@@ -39,9 +39,9 @@ SELECT DISTINCT(pan_numbers) FROM pan_numbers_dataset;
 SELECT * FROM pan_numbers_dataset
 WHERE BINARY pan_numbers != UPPER(pan_numbers);
 
-SELECT LENGTH(pan_num), HEX(pan_num)
-FROM pan_num_dataset_cleaned
-WHERE pan_num LIKE 'VGLOD3180G%';     -- length 13 i.e presence of \r or \n or \t
+-- SELECT LENGTH(pan_num), HEX(pan_num)
+-- FROM pan_num_dataset_cleaned
+-- WHERE pan_num LIKE 'VGLOD3180G%';     -- length 13 i.e presence of \r or \n or \t
 
 DROP TABLE IF EXISTS pan_num_dataset_cleaned;
 CREATE TABLE pan_num_dataset_cleaned AS
